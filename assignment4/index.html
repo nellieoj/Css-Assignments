@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="intro-section">
+        <img src="logo.svg" alt="app-logo" />
+        <h1>For Individuals</h1>
+        <p>
+          Start benefitting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+      </section>
+
+      <section class="form-section">
+        <form action="#">
+          <div class="form">
+            <div class="first-name-box form-box">
+              <label for="first-name"> First Name </label>
+              <input type="text" id="first-name" />
+            </div>
+
+            <div class="last-name-box form-box">
+              <label for="last-name"> Last Name </label>
+              <input type="text" id="last-name" />
+            </div>
+
+            <div class="gender-box form-box">
+              <label for="gender">Gender </label>
+              <select name="gender" id="gender">
+                <option value="" disabled selected hidden>Select here</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="DOB-box form-box">
+              <label for="DOB"> Date of Birth </label>
+              <select name="DOB" id="DOB" class="DOB-select">
+                <option value="" disabled selected hidden>Select here</option>
+                <option value="3rd March,2006">3rd March,2006</option>
+                <option value="24th March,1900">24th March,1900</option>
+                <option value="4th March,2000">4th March,2000</option>
+              </select>
+
+              <span class="calendar">
+                <img src="calendar.svg" alt="" />
+              </span>
+            </div>
+
+            <div class="weight-box form-box">
+              <label for="weight">Weight (KG)</label>
+              <input type="number" placeholder="Enter Weight" id="weight" />
+            </div>
+
+            <div class="height-box form-box">
+              <label for="height">Height (CM) </label>
+              <input
+                type="number"
+                placeholder="Enter Height here.."
+                id="height"
+              />
+            </div>
+
+            <div class="activity-level-box form-box">
+              <label for="activity-level">Activity Level</label>
+              <select name="activity-level" id="activity-level">
+                <option value="" disabled selected hidden>Select here</option>
+                <option value="10">10 mins</option>
+                <option value="20">20 mins</option>
+              </select>
+            </div>
+
+            <div class="password-box form-box">
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+              <span class="eye">
+                <img src="eye.svg" alt="" />
+              </span>
+            </div>
+          </div>
+          <button type="button" class="register">Register</button>
+          <p class="desktop footer">
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+
+        <p class="mobile footer">
+          By clicking Register, you agree to our
+          <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

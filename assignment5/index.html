@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="logo.png" alt="WP Pusher Logo" />
+        <span>WP Pusher</span>
+      </div>
+      <nav class="nav">
+        <a href="#">Download</a>
+        <a href="#">Learn more</a>
+        <a href="#">Pricing</a>
+        <a href="#">Help</a>
+        <button class="account-button">Account</button>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="form-section">
+        <h1>Checkout</h1>
+        <form>
+          <h2><span>1</span>Your Basic Information</h2>
+          <div class="name-inputs">
+            <div class="input-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="Jane" />
+            </div>
+            <div class="input-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Doe" />
+            </div>
+          </div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="janedoe@example.com" />
+
+          <h2><span>2</span>Your Payment Information</h2>
+          <label for="card-number">Credit Card</label>
+          <input type="text" id="card-number" placeholder="Card Number" />
+          <input
+            type="text"
+            placeholder="MM / YY"
+            style="width: 48%; display: inline-block"
+          />
+          <input
+            type="text"
+            placeholder="CVC"
+            style="width: 48%; display: inline-block"
+          />
+
+          <button type="submit" class="button">Buy WP Pusher</button>
+        </form>
+        <div class="contact">
+          Need any help? Don’t hesitate to <a href="#">contact</a> support!
+        </div>
+      </div>
+      <div class="info-section">
+        <h2>Freelancer</h2>
+        <p><strong>$99 / year</strong></p>
+        <p>Automatically renews after 1 year</p>
+        <ul>
+          <li>Use on 5 client sites</li>
+          <li>Private repositories</li>
+          <li>Email support</li>
+        </ul>
+        <p>Need 20 client sites? <a href="#">Switch to the Agency plan.</a></p>
+      </div>
+    </div>
+  </body>
+</html>

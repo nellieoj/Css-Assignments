@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 3rem auto;
+}
+.intro-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  justify-items: flex-start;
+}
+/* selects all children in a parent tag */
+.intro-section > * {
+  padding: 0.7rem 0;
+}
+.intro-section h1 {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.intro-section p {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 500;
+  width: 25rem;
+  line-height: 1.5rem;
+}
+form {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  padding: 2rem;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.form > :nth-last-child(2),
+.form > :last-child {
+  grid-column: span 2; /* Make them span across both columns */
+}
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+  font-size: 17px;
+}
+.DOB-box,
+.password-box {
+  position: relative;
+}
+.calendar,
+.eye {
+  position: absolute;
+  right: 0.5rem;
+  top: 2.5rem;
+}
+
+input,
+select {
+  padding: 0.9rem 0.7rem;
+  outline: 0;
+  border: 2px solid rgb(115, 115, 115, 0.1);
+  font-size: 15px;
+}
+input:focus {
+  border: 2px solid #61d2d7;
+}
+::placeholder,
+select {
+  color: #737373;
+  letter-spacing: 0.06rem;
+  font-weight: 400;
+  font-size: 15px;
+}
+select option {
+  color: black;
+}
+
+.register {
+  width: 100%;
+  border-radius: 0.2rem;
+  background-color: #61d2d7;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.8rem;
+  margin: 2rem 0rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer{
+    line-height: 1.5rem;
+    text-align: center;
+}
+.footer.mobile{
+    display: none;
+}
+.footer a {
+  color: #61d2d7;
+  font-weight: 600;
+
+}
+
+.DOB-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.DOB-select::-ms-expand {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  main {
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: stretch;
+
+  }
+ form {
+    margin-top: 3rem;
+ 
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-section p {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+ form {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .footer.mobile{
+    display: block;
+    margin-top: 2rem;
+}
+.footer.desktop{
+    display: none;
+}
+}
